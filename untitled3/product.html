@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleProduct.css">
+  <title>Product Page</title>
+</head>
+
+<body>
+<header>
+  <div class="top-bar">
+    <a href="index.html"><div class="logo">Logo</div></a>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+    <div class="login">
+      <a href="registracia.html" > <button>Login</button></a>    </div>
+    <div class="menu-icon">&#9776;</div>
+  </div>
+  <div class="menu">
+
+
+  </div>
+  <div class="categories">
+    <div class="category">
+      Kategória 1
+      <div class="dropdown">
+        <a href="product.html">Kategórie</a>
+        <a href="#">Kategórie</a>
+
+      </div>
+    </div>
+
+    <div class="category">
+      Kategória 2
+      <div class="dropdown">
+        <a href="#">Kategórie</a>
+        <a href="#">Kategórie</a>
+
+      </div>
+    </div>
+
+  </div>
+</header>
+<div class="filter-sidebar">
+  <div class="filter-icon" onclick="toggleFilters()">
+    <img src="filter-icon.png" alt="Filter Icon">
+  </div>
+  <div class="filters">
+    <label for="filterPrice">Filtrovať podla ceny:</label>
+    <input type="number" id="filterPrice">
+    <label for="filterName">Filtrovať podla názvu:</label>
+    <input type="text" id="filterName">
+    <label for="filterCategory">Filtrovať podla kategorie:</label>
+    <select id="filterCategory">
+      <option value="all">All Categories</option>
+
+      <option value="Category 1">Kategória 1 </option>
+      <option value="Category 2">Kategória 2</option>
+    </select>
+    <label for="filterYear">Filtrovať podla roku:</label>
+    <select id="filterYear">
+      <option value="all">Všetky roky</option>
+
+      <option value="2021">2000</option>
+      <option value="2022">2001</option>
+      <option value="2021">2002</option>
+      <option value="2022">2003</option>
+      <option value="2021">2004</option>
+      <option value="2022">2005</option>
+      <option value="2021">2006</option>
+      <option value="2022">2007</option>
+      <option value="2021">2008</option>
+      <option value="2022">2009</option>
+      <option value="2021">2010</option>
+      <option value="2022">2011</option>
+      <option value="2021">2012</option>
+      <option value="2022">2013</option>
+      <option value="2021">2014</option>
+      <option value="2022">2015</option>
+      <option value="2021">2016</option>
+      <option value="2022">2017</option>
+      <option value="2021">2018</option>
+      <option value="2022">2019</option>
+      <option value="2021">2020</option>
+      <option value="2022">2021</option>
+      <option value="2021">2022</option>
+      <option value="2022">2023</option>
+
+
+    </select>
+    <button id="applyFiltersBtn">Filtrovať</button>
+  </div>
+</div>
+<div class="products-container">
+  <div class="products-grid" id="productGrid"></div>
+  <div class="pages" id="pageContainer"></div>
+</div>
+
+
+<footer class="icon-footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2>O nás</h2>
+      <p>Stručný popis o našej firme.</p>
+    </div>
+    <div class="footer-section contact">
+      <h2>Kontakt</h2>
+      <p>Email: info@example.com</p>
+      <p>Telefon: +123 456 789</p>
+    </div>
+    <div class="footer-section contact">
+      <h2>Kontakt</h2>
+      <p>Email: info@example.com</p>
+      <p>Telefon: +123 456 789</p>
+    </div>
+
+  </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2023 Tomáš Barčík. Práca.
+  </div>
+</footer>
+
+<script src="scriptProduct.js"></script>
+</body>
+</html>
